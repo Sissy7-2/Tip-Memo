@@ -1,0 +1,37 @@
+Githubへプッシュ
+ローカル→リモート（GitHub)にプッシュ
+
+12/30 ローカル→GitHubにmynewsをプッシュ
+mkdir mynewsというリポジトリを作ってからgit initですか？
+↓
+そうですね、すでにmynewsというディレクトリはあるのでさらに作る必要はありません。
+今の状態で、
+git init
+してみてください。
+それ以降はコマンド入力されている通りです。
+↓
+mynewsというディレクトリがあるからmynewsのリポジトリを作る必要はない、ということでしょうか？
+↓
+mkdir mynews.はリポジトリを作成するコマンドではありません。ディレクトリを作成するコマンドです。
+リポジトリを作るコマンドは、git initになります。
+↓
+↓
+↓
+なので、
+git init →git add . →git commit -m “first commit” → git log →cd ~/environment/ファイル名 →$ ssh -T git@github.com →Hi Sissy7-2! 
+You've successfully authenticated, but GitHub does not provide shell access.出てくる(接続ok) 
+→ git remote add origin git@github.com:アカウント名/リポジトリ名.git → git push -u origin master
+と、なる。
+
+
+⚠プッシュした後にProfileController.phpファイルのスペースの修正をして上書き保存したので再度プッシュする
+↓
+git add . → git commit -m “second-commit” → git log → ssh -T git@github.com → Hi Sissy7-2! You've successfully authenticated, 
+but GitHub does not provide shell access.出てくる(接続ok) → git push -u origin master
+※git remoteはそのローカルリポジトリを初めて利用する時に必要！※
+https://gyazo.com/455c8341a406e7c2eebc1d86895be052
+https://gyazo.com/dd4c3d20816e0e76d69002d5cc423eef　
+↓
+↓
+再度プッシュ完了！
+
